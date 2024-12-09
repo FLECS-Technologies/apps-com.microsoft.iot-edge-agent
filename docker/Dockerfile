@@ -1,12 +1,1 @@
-ARG ARCH
-ARG VERSION
-ARG VARIANT
-
-FROM scratch:${VERSION}
-
-ARG ARCH
-ARG VERSION
-ARG VARIANT
-
-RUN [ ! -z "${ARCH}" ]
-RUN [ ! -z "${VERSION}" ]
+FROM mcr.microsoft.com/azureiotedge-agent:1.5.15
