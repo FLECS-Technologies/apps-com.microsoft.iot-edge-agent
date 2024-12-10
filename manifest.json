@@ -11,5 +11,14 @@
     "conffiles": [
         "appsettings_agent.json:/app/appsettings_agent.json",
         "config.json:/app/config.json"
+    ],
+    "env": [
+        "DockerUri=<docker service uri>",
+        "DeviceConnectionString=<Your IoT Hub Device Connection String>",
+        "ConfigSource=<twin|local>",
+        "LocalConfigPath=<Path to the custom configuration JSON file in 'local' mode>",
+        "DockerLoggingDriver=<json-file|journald|fluentd|etwlogs|none>",
+        "NetworkId=<Docker network id>",
+        "EdgeDeviceHostName=<Edge device host name>"
     ]
 }
