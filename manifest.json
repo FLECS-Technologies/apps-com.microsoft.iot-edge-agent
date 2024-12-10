@@ -9,6 +9,7 @@
     "editor": "",
     "capabilities": ["DOCKER"],
     "conffiles": [
+        "appsettings.json:/app/appsettings.json",
         "appsettings_agent.json:/app/appsettings_agent.json",
         "config.json:/app/config.json"
     ],
@@ -19,6 +20,14 @@
         "LocalConfigPath=<Path to the custom configuration JSON file in 'local' mode>",
         "DockerLoggingDriver=<json-file|journald|fluentd|etwlogs|none>",
         "NetworkId=<Docker network id>",
-        "EdgeDeviceHostName=<Edge device host name>"
+        "EdgeDeviceHostName=<Edge device host name>",
+        "IOTEDGE_DEVICEID=<YOUR_DEVICE_ID>",
+        "IOTEDGE_MANAGEMENTURI=http://<hostname>:8080",
+        "IOTEDGE_IOTHUBHOSTNAME=<YOUR_IOTHUBHOSTNAME>",
+        "IOTEDGE_MODULEID=$edgeAgent",
+        "IOTEDGE_AUTHSCHEME=sasToken",
+        "IOTEDGE_WORKLOADURI=http://<hostname>:8081",
+        "IOTEDGE_MODULEGENERATIONID=<MODULE_GENERATION_ID>",
+        "IOTEDGE_APIVERSION=2018-06-28"
     ]
 }
